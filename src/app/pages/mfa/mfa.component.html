@@ -1,0 +1,32 @@
+<div class="display-flex justify-content-center align-items-center w-100 h-100">
+  <div class="box-form">
+    <p>Valide su identidad</p>
+
+    <div class="display-flex flex-column align-items-center m-5 w-100">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Rut</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+
+      <button mat-flat-button color="primary" (click)="validate()">
+        Validar
+      </button>
+    </div>
+
+    <div class="display-flex flex-column align-items-center w-100">
+      <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Código SMS</mat-label>
+        <input matInput type="number" [disabled]="disable" />
+      </mat-form-field>
+
+      <button
+        mat-flat-button
+        color="primary"
+        [disabled]="disable"
+        routerLink="/main/upload-file"
+      >
+        Enviar
+      </button>
+    </div>
+  </div>
+</div>
