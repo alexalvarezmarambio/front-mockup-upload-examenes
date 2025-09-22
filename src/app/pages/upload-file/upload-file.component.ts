@@ -1,8 +1,9 @@
 import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatMiniFabButton } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-upload-file',
@@ -10,8 +11,9 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
     MatIcon,
     MatTableModule,
     DatePipe,
-    MatMiniFabButton
-  ],
+    RouterLink,
+    MatButtonModule
+],
   templateUrl: './upload-file.component.html',
   styleUrl: './upload-file.component.scss'
 })
